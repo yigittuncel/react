@@ -3,11 +3,9 @@ import React from 'react';
 import './ExpensesFilter.css';
 
 const ExpensesFilter = (props) => {
-
   const dropdownChangeHandler = (event) => {
-    const selectedYear = event.target.value;
-    props.onChangeFilter(selectedYear);
-  }
+    props.onChangeFilter(event.target.value);
+  };
 
   return (
     <div className='expenses-filter'>
