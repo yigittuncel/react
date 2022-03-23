@@ -6,14 +6,14 @@ import './Chart.css'
 const Chart = props => {
   return (
     <div className="chart">
-      {props.dataPoints.map(dataPoint => {
+      {props.dataPoints.map(dataPoint => (
         <ChartBar
           key={dataPoint.label}
           data={dataPoint.value}
           maxValue={null}
           label={dataPoint.label}
         />
-      })}
+      ))}
     </div>
   )
 };
