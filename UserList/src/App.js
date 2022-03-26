@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import AddUser from './Components/User/AddUser';
 import UserList from './Components/User/UserList';
-import Wrapper from './Components/Helpers/Wrapper';
 
 const INITIAL_USERS = [
   {name: 'Max', age: '28', id: Math.random().toString()},

@@ -1,6 +1,5 @@
 import React from "react";
 import styles from './Button.module.css'
-import Wrapper from "../Helpers/Wrapper";
 
 const Button = (props) => {
   return (
