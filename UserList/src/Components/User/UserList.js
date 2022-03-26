@@ -1,20 +1,18 @@
 import React from "react";
-import UserIndividual from "./UserIndividual";
-import './UserList.css'
+import styles from './UserList.module.css'
+import Card from '../UI/Card'
 
 const UserList = props => {
   return (
-    <div className="user-list">
+    <Card className={styles.users}>
       <ul>
         {props.allUsers.map(user => (
-          <UserIndividual
-          key={user.id}
-          name={user.name}
-          age={user.age}
-          />
-          ))}
+          <li key={user.id}>
+            {user.name} ({user.age} years old)
+          </li>
+        ) )}
       </ul>
-    </div>
+    </Card>
   );
 };
 

@@ -19,12 +19,20 @@ const AddUser = (props) => {
   const submitHandler = e => {
     e.preventDefault();
 
+    if (enteredName.trim().length === 0 || enteredAge.trim().length === 0) {
+      return;
+    }
+
+    if ( +enteredAge < 1 ) {
+      return;
+    }
+
     const newUSer = {
       name: enteredName,
       age: enteredAge,
       id: Math.random().toString()
     }
-    
+
     props.onSaveNewUser(newUSer);
     setEnteredName('')
     setEnteredAge('')
