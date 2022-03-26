@@ -1,0 +1,10 @@
+.user-list {
+  margin: 2rem auto;
+  width: 100%;
+  max-width: 40rem;
+}
+
+.user-list li {
+  list-style-type: none;
+  border: 1px solid gray;
+}
