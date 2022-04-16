@@ -30,7 +30,12 @@ class App extends Component {
         <h1>React Animations</h1>
         <button className="Button" onClick={this.toggleBlock}>Toggle</button>
         <br />
-        <Transition in={this.state.showBlock} timeout={1000} mountOnEnter unmountOnExit>
+        <Transition
+          in={this.state.showBlock}
+          timeout={1000}
+          mountOnEnter
+          unmountOnExit
+        >
           {state => (
             <div style={{
               backgroundColor: "red",
