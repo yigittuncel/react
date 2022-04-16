@@ -17,7 +17,7 @@
   animation: openModal 0.4s ease-out forwards
 }
 
-.ModalClose {
+.ModalClosed {
   animation: closeModal 0.4s ease-out forwards;
 }
 
